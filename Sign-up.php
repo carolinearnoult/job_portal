@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
     $mobile_number=$_POST['mobile_number'];
     $dob=$_POST['dob'];
 
-    $query = mysqli_query($conn, "INSERT INTO jobskeer(email,password,first_name,last_name,mobile_number,dob)values('$email',
+    $query = mysqli_query($conn, "INSERT INTO jobskeer(email,Password,first_name,last_name,mobile_number,dob)values('$email',
 '$Password','$first_name','$last_name','$mobile_number','$dob')");
 
     var_dump($query);
